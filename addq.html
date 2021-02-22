@@ -1,0 +1,68 @@
+<HTML>
+
+<HEAD>
+
+<TITLE> add Questions</TITLE>
+
+<SCRIPT language="javascript">
+
+function add() {
+
+ 
+
+                //Create an input type dynamically.
+
+                var element = document.createElement("INPUT");
+
+ 
+
+                //Assign different attributes to the element.
+
+                element.setAttribute("type", "Textarea");
+
+               
+
+ 
+
+                var foo = document.getElementById("fooBar");
+
+ 
+
+                //Append the element in page (in span).
+
+                foo.appendChild(element);
+
+    foo.appendChild(document.createElement("br"));
+    var question=foo.value;
+
+ 
+
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<FORM method="POST" action="storedata1.php">
+
+ 
+
+ 
+
+<INPUT type="button" value="Add Question" onclick="add()"/>
+
+<br>
+
+<span id="fooBar">&nbsp;</span>
+
+ 
+
+</FORM>
+
+<input type="submit" name="createform"value="SUBMIT">
+
+</BODY>
+
+</HTML>
